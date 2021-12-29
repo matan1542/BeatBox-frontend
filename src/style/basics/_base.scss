@@ -26,8 +26,8 @@ a {
     color: rgb(22, 22, 22);
     cursor: pointer;
     &.active {
-        color: cornflowerblue;
-        border-bottom:2px solid cornflowerblue;
+        // color: rgb(255, 255, 255);
+        // border-bottom:2px solid rgb(255, 255, 255);
     }
 }
 button {

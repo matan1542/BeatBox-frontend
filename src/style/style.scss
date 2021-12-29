@@ -8,6 +8,10 @@
 @import "basics/helpers.scss";
 @import "basics/base.scss";
 @import "basics/layout.scss";
+@import "components/app.scss";
 
 //Components
 @import "components/Header";
+@import "components/side_bar.scss";
+@import "components/player-bar.scss";
+@import "components/home.scss";

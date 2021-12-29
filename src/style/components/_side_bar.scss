@@ -1,0 +1,31 @@
+.management-side-bar-container {
+    color: #fff;
+    width: 240px;
+    background-color: rgb(0, 0, 0);
+    // flex-grow:1 ;
+    .side-bar-navigation-container {
+        margin-inline: 8px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        & > * {
+            display: flex;
+            align-items: center;
+            font-family: OpenSans, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            padding-block: 12px;
+            padding-left: 26px;
+            color: #666a6d;
+            &:hover {
+                color: #ffff;
+            }
+            img {
+                padding-right: 10px;
+            }
+            &.active {
+                color: #fff;
+                background-color: #282828;
+            }
+        }
+    }
+}
