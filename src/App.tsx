@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 // import logo from './logo.svg';
-import Home from './components/Home'
+import Home from './pages/Home'
 import { Header } from './components/Header'
 import SideBar from './components/SideBar';
 import PlayerBar from './components/player-cmps/PlayerBar';
