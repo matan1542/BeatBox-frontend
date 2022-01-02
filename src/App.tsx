@@ -1,7 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import Home from './components/Home'
+import React, { Fragment } from 'react';
+// import logo from './logo.svg';
+import Home from './pages/Home'
 import { Header } from './components/Header'
+import SideBar from './components/SideBar';
+import PlayerBar from './components/player-cmps/PlayerBar';
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from 'recoil';
 import './style/style.scss'
 // import {HashRouter as Router, Switch,Route} from 'react-router-dom'
 import { Routes, Route, Link } from "react-router-dom";
@@ -16,15 +25,24 @@ import {
 } from 'react-query'
 function App() {
   return (
-    <div className="App">
-      <header>
+    <RecoilRoot>
+      <div className="App">
+        {/* <header>
         <Header />
-      </header>
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-      </Routes>
-
-    </div>
+      </header> */}
+        <Fragment>
+          <main className="layout-main-container">
+            <section className="layout-page-container">
+              <SideBar />
+              <Routes>
+                <Route path="/home" element={<Home />}></Route>
+              </Routes>
+            </section>
+            <PlayerBar />
+          </main>
+        </Fragment>
+      </div>
+    </RecoilRoot>
   );
 }
 

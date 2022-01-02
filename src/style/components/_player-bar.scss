@@ -1,0 +1,17 @@
+.player-container{
+    height: 91px;
+    background-color: #181818;
+    padding: 20px;
+    .player-youtube-iframe{
+        position: absolute;
+        left: -99999px;
+        height:0;
+        z-index: -1;
+    }
+    .player-container-toolbar{
+        font-size: 1.3em;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+}
