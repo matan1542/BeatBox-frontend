@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import Home from './pages/Home'
 import { Header } from './components/Header'
 import SideBar from './components/SideBar';
-import PlayerBar from './components/player-cmps/PlayerBar';
+import PlayerBar from './components/playerCmps/PlayerBar';
 import {
   RecoilRoot,
   atom,

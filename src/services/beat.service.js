@@ -2,7 +2,6 @@ import { storageService } from './async-storage-service'
 import {songs} from './songs'
 
 const SONGS_KEY = 'songs'
-
 export const beatService = {
     query
 }

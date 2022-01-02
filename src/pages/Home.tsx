@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useRecoilState } from 'recoil'
 import {store} from '../store/store'
 import { beatService } from '../services/beat.service'
-import SongList from '../components/home-components/SongList' 
+import SongList from '../components/homeComponents/SongList' 
 
 export default function Home() {
     const [songsState,setSongsState] = useRecoilState(store.songsState)
